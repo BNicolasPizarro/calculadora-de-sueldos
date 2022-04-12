@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calcula el valor de tu sueldo</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://kit.fontawesome.com/8bbd4b1dfb.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100;200;300;400;500;600&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,800;0,900;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="main-container">
+        <div class="main-text">
+            <h1>calcula tu sueldo</h1>
+        </div>
+        <form action="" class="form">
+            <label for="">ingresa tu sueldo basico</label>
+            <input type="number" id="input-sueldo">
+            <label for="">ingresa las cantidad de horas trabajadas por dia</label>
+            <input type="number" id="input-horas-trabajadas">
+            <label for="">ingresa la cantidad de dias trabajados por semana</label>
+            <input type="number" id="input-dias-trabajados">
+            <label for="">ingresa las horas extras</label>
+            <input type="number" id="input-horas-extras">
+            <label for="">ingrese dias feriados trabajados</label>
+            <input type="number" id="input-feriados">
+            <button type="button" class="button" onclick="calcularSueldo()">calcular</button>
+        </form>
+    </section>
+    <sectio class="second-container">
+        <div class="second-text">
+            <h1>Tu salario deberia ser este monto</h1>
+            <p>recuerda que este monto no incluye descuentos de ningun tipo</p>
+        </div>
+        <div class="results-container">
+            <h3>el valor de las horas extra es : </h3>
+            <p id="result-horas-extra"></p>
+            <h3>el valor de las horas feriados es: </h3>
+            <p id="result-horas-feriado"></p>
+            <h3>el valor total de sueldo es: </h3>
+            <p id="result-sueldo-final"></p>
+        </div>
+    </sectio>
+    <script src="/script.js"></script>
+</body>
+</html>
